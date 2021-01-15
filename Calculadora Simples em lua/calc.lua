@@ -1,6 +1,6 @@
 -- script_name("CalcSimpLua")
 -- script_author("SweetGamerPro")
--- script_version("1.0")
+-- script_version("1.0.1")
 
 print('Digite o primeiro valor: ')
 local a = io.read("n")
@@ -28,7 +28,7 @@ else
     R = "Operacao invalida"
 end
 
-if type(R) == "number" and (R >= 0) and (R < 5) then
+if type(R) == "number" and (R >= 0) and (R <= 4) then
     print(a.." "..op.." "..b.." = "..R)
 else
     print("Operacao Invalida!")
