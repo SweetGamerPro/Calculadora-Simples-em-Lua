@@ -28,7 +28,7 @@ else
     R = "Operacao invalida"
 end
 
-if type(R) == "number" and (R >= 0) and (R <= 4) then
+if (type(R) == "number") and (R >= 0) and (R <= 4) then
     print(a.." "..op.." "..b.." = "..R)
 else
     print("Operacao Invalida!")
