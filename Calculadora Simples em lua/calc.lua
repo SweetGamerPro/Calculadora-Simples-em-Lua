@@ -8,6 +8,18 @@ print('Digite o segundo valor: ')
 local b = io.read("n")
 
 print('Informe a operacao: ')
-print('1 => +\n2 => -\n3 => x\n 4 => /')
+print('1 => +\n2 => -\n3 => x\n4 => /')
 local op = io.read("n")
+
+if op == 1 then
+    R = a + b
+elseif op == 2 then
+    R = a - b
+elseif op == 3 then
+    R = a * b
+elseif op == 4 then
+    R = a / b
+else
+    R = "Operacao invalida"
+end
 
