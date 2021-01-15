@@ -1,5 +1,6 @@
 -- script_name("CalcSimpLua")
 -- script_author("SweetGamerPro")
+-- script_version("1.0")
 
 print('Digite o primeiro valor: ')
 local a = io.read("n")
@@ -13,13 +14,22 @@ local op = io.read("n")
 
 if op == 1 then
     R = a + b
+    op = "+"
 elseif op == 2 then
     R = a - b
+    op = "-"
 elseif op == 3 then
     R = a * b
+    op = "x"
 elseif op == 4 then
     R = a / b
+    op = "/"
 else
     R = "Operacao invalida"
 end
 
+if type(R) == "number" and (R >= 0) and (R < 5) then
+    print(a.." "..op.." "..b.." = "..R)
+else
+    print("Operacao Invalida!")
+end
