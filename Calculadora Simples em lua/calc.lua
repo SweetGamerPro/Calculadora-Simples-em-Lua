@@ -1,5 +1,5 @@
-script_name("CalcSimpLua")
-script_author("SweetGamerPro")
+-- script_name("CalcSimpLua")
+-- script_author("SweetGamerPro")
 
 print('Digite o primeiro valor: ')
 local a = io.read("n")
