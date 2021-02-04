@@ -1,14 +1,16 @@
--- script_name("CalcSimpLua")
--- script_author("SweetGamerPro")
--- script_version("1.0.1")
+--[[
+script_name("CalcSimpLua")
+script_author("SweetGamerPro")
+script_version("1.0.1")
+--]]
 
-print('Digite o primeiro valor: ')
+print('Enter the first number: ')
 local a = io.read("n")
 
-print('Digite o segundo valor: ')
+print('Enter the second number: ')
 local b = io.read("n")
 
-print('Informe a operacao: ')
+print('Inform the operation: ')
 print('1 => +\n2 => -\n3 => x\n4 => /')
 local op = io.read("n")
 
@@ -25,11 +27,11 @@ elseif op == 4 then
     R = a / b
     op = "/"
 else
-    R = "Operacao invalida"
+    R = "Invalid operation"
 end
 
 if (type(R) == "number") and (R >= 0) and (R <= 4) then
     print(a.." "..op.." "..b.." = "..R)
 else
-    print("Operacao Invalida!")
+    print("Invalid operation!")
 end
