@@ -1,7 +1,7 @@
 --[[
 script_name("CalcSimpLua")
-script_author("SweetGamerPro")
-script_version("1.0.1")
+script_author("Sandenberg Ferreira Melo")
+script_version("1.0.3")
 --]]
 
 print('Enter the first number: ')
